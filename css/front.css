@@ -1,0 +1,47 @@
+/* 
+Post To-Do Lists Front End Styles
+*/
+
+.ptdl_date {
+	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.2);  /* FF3+, Saf3+, Opera 10.10+, Chrome, IE9 */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33000000,endColorstr=#33000000); /* IE6–IE9 */
+			zoom: 1;
+	border-radius:5px;
+	padding:0 5px;
+	font-size:.7em;
+	opacity:.5;
+	filter: alpha(opacity=50);
+	display:inline-block;
+}
+
+.ptdl_checked {
+	text-decoration:line-through;
+	opacity:.5;
+	filter: alpha(opacity=50);
+	-webkit-transition: all 0.2s ease-out;  /* Saf3.2+, Chrome */
+	-moz-transition: all 0.2s ease-out;  /* FF4+ */
+	-ms-transition: all 0.2s ease-out;  /* IE10? */
+	-o-transition: all 0.2s ease-out;  /* Opera 10.5+ */
+	transition: all 0.2s ease-out; 
+}
+
+.ptdl_error {
+	background:red;
+	color:#fff;
+	padding:5px 10px;
+	opacity:.2;
+	filter: alpha(opacity=20);
+	-webkit-transition: all 0.2s ease-out;  /* Saf3.2+, Chrome */
+	-moz-transition: all 0.2s ease-out;  /* FF4+ */
+	-ms-transition: all 0.2s ease-out;  /* IE10? */
+	-o-transition: all 0.2s ease-out;  /* Opera 10.5+ */
+	transition: all 0.2s ease-out; 
+}
+
+.ptdl_checked:hover,
+.ptdl_error:hover {
+	opacity:1;
+	filter: alpha(opacity=100);
+}
+
